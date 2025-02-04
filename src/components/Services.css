@@ -1,0 +1,19 @@
+.services {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #edac43;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
