@@ -1,0 +1,143 @@
+.contact {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contact-subtitle {
+  color: #666;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f8f8f8;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #f4941c;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(244, 148, 28, 0.1);
+}
+
+.form-input.error {
+  border-color: #dc2626;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.submit-button {
+  padding: 1rem 2rem;
+  background-color: #f4941c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.submit-button:not(:disabled):hover {
+  background-color: #e38614;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(244, 148, 28, 0.2);
+}
+
+.submit-button:not(:disabled):active {
+  transform: translateY(0);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.status-message {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.status-message.success {
+  background-color: #e7f7ed;
+  color: #0d6832;
+}
+
+.status-message.error {
+  background-color: #fae8e8;
+  color: #b91c1c;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+  
+  .contact-container {
+    padding: 1.5rem;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+  }
+}
