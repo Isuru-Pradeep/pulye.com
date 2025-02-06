@@ -2,8 +2,58 @@
   background-color: #050404;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem; /* Increased padding for better spacing */
   position: relative;
   bottom: 0;
   width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin for better control */
+  font-size: 1rem; /* Default font size */
+}
+
+.footer a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set default link color */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  background: linear-gradient(90deg, #00bcd4, rgb(159, 184, 244)); /* Gradient background */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+  font-weight: bold; /* Make text bold */
+}
+
+.footer a:hover {
+  animation: glow 1.5s infinite alternate; /* Glow animation on hover */
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #00bcd4, 0 0 10px #00bcd4, 0 0 20px #00bcd4; /* Start glow */
+  }
+  100% {
+    text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081; /* End glow */
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+
+  .footer a {
+    font-size: 0.9rem; /* Smaller font size for links on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer p {
+    font-size: 0.8rem; /* Even smaller font size for very small devices */
+  }
+
+  .footer a {
+    font-size: 0.8rem; /* Smaller font size for links on very small devices */
+  }
 }

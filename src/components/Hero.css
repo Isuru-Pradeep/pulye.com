@@ -7,6 +7,8 @@
   align-items: center;
   color: white;
   text-align: center;
+  padding-top: 60px; /* Add padding to avoid overlapping with the navbar */
+  padding-bottom: 60px; /* Add padding to avoid overlapping with the footer */
 }
 
 .hero h1 {
@@ -40,4 +42,74 @@
 .cta-button:hover {
   background-color: #e4891a;
   transform: translateY(-5px);
+}
+
+/* Modal Styles */
+.modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333; /* Ensure text is visible on white background */
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is above other content */
+  padding-top: 60px; /* Add space for navbar */
+  padding-bottom: 60px; /* Add space for footer */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .modal {
+    padding: 1.5rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
