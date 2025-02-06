@@ -1,108 +1,127 @@
 .book-journey {
-  text-align: center;
-  position: relative; /* Ensure close button is positioned correctly */
-}
-
-.book-journey h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #333;
-  font-family: "Poppins", sans-serif;
-}
-
-.booking-form {
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow-y: auto; /* Enable scrolling within the form */
-  max-height: 80vh; /* Limit height to ensure scrolling */
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-
-.form-group label {
-  display: block;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-  font-family: "Poppins", sans-serif;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  transition: border-color 0.3s ease;
-  font-family: "Poppins", sans-serif;
-}
-
-.form-group input:focus {
-  border-color: #f4941c;
-  outline: none;
-}
-
-.cta-button {
-  background-color: #f4941c;
-  color: white;
-  padding: 0.75rem 2rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: "Poppins", sans-serif;
-}
-
-.cta-button:hover {
-  background-color: #e4891a;
-  transform: translateY(-2px);
-}
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #333;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.close-button:hover {
-  color: #f4941c;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
+    text-align: center;
+    position: relative; /* Ensure close button is positioned correctly */
+    background-color: white; /* Add background color */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    overflow-y: auto; /* Enable scrolling within the form */
+    max-height: 80vh; /* Fallback height for non-JavaScript screens */
+  }
+  
   .book-journey h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
   }
-
+  
   .booking-form {
-    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
-
+  
+  .form-group {
+    text-align: left;
+  }
+  
   .form-group label {
-    font-size: 1rem;
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
   }
-
+  
   .form-group input {
-    font-size: 0.9rem;
-    padding: 0.7rem;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
   }
-
+  
+  .form-group input:focus {
+    border-color: #f4941c;
+    outline: none;
+  }
+  
   .cta-button {
-    font-size: 0.9rem;
-    padding: 0.5rem 1.5rem;
+    background-color: #f4941c;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;
   }
-}
+  
+  .cta-button:hover {
+    background-color: #e4891a;
+    transform: translateY(-2px);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  
+  .close-button:hover {
+    color: #f4941c;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .book-journey h2 {
+      font-size: 2rem;
+      margin-top: 2rem; /* Add space for the close button */
+    }
+  
+    .booking-form {
+      padding: 1.5rem;
+    }
+  
+    .form-group label {
+      font-size: 1rem;
+    }
+  
+    .form-group input {
+      font-size: 0.9rem;
+      padding: 0.7rem;
+    }
+  
+    .cta-button {
+      font-size: 0.9rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .book-journey h2 {
+      font-size: 1.8rem;
+      margin-top: 3rem; /* Add more space for the close button */
+    }
+  
+    .close-button {
+      top: 10px;
+      right: 10px;
+    }
+  }
