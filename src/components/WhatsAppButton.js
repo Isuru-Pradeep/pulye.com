@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
   };
 
   return (
-    <button className="whatsapp-button" onClick={handleClick}>
+    <button className="whatsapp-button" onClick={handleClick} aria-label="Contact us on WhatsApp">
       💬
     </button>
   );

@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="logo-container">
           <div className="logo-section">
-            <img src={Logo} alt="Pulye Logo" className="logo" />
+            <img src={Logo} alt="Pulye Transport Services Logo" className="logo" />
             <span><b>Pulye</b></span>
           </div>
         </div>
