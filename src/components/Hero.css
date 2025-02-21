@@ -29,9 +29,9 @@
 }
 
 .hero-title {
-  font-size: 2.25rem;
-  line-height: 2.25rem;
-  font-weight: 500;
+  font-size: 6.25rem;
+  line-height: 6rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
   background-image: linear-gradient(to bottom right, #fff, #9ca3af);
   background-clip: text;
@@ -104,7 +104,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
   }
 
   .hero-subtitle {
