@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Contact from "./components/Contact/Contact";
-import ContactDetails from './components/ContactDetails';
-import Footer from "./components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton";
+import HomePage from "./pages/HomePage";
+import GalleryPage from "./pages/GalleryPage";
 import LoadingSpinner from "./components/LoadingSpinner";
 
 function App() {
@@ -38,15 +34,12 @@ function App() {
       {isLoading ? (
         <LoadingSpinner />
       ) : (
-        <>
-          <Navbar />
-          <Hero />
-          <Services />
-          <Contact />
-          <ContactDetails />
-          <Footer />
-          <WhatsAppButton />
-        </>
+        <Router>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
+          </Routes>
+        </Router>
       )}
     </div>
   );

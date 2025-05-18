@@ -1,3 +1,38 @@
+# robots.txt for Pulye Transport Services
 # https://www.robotstxt.org/robotstxt.html
+
+# Allow all search engines to crawl everything by default
 User-agent: *
-Disallow:
+Allow: /
+
+# Specify the path to your sitemap (once you create one)
+Sitemap: https://www.pulye.com/sitemap.xml
+
+# For transport service websites, we want search engines to focus on
+# service pages, destinations, and booking information
+# Crawl rate optimization for major search engines
+User-agent: Googlebot
+Crawl-delay: 2
+
+User-agent: Bingbot
+Crawl-delay: 2
+
+# Prevent indexing of utility files and non-customer-facing content
+Disallow: /*.json$
+Disallow: /*.map$
+Disallow: /static/js/*.js$
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /api/
+
+# For transport websites, don't index search result pages or temporary booking states
+Disallow: /search?*
+Disallow: /booking/temp/
+Disallow: /booking/session/
+
+# Image crawling allowance - important for transport/vehicle gallery pages
+User-agent: Googlebot-Image
+Allow: /img/
+Allow: /gallery/
+Allow: /vehicles/
+Allow: /services/

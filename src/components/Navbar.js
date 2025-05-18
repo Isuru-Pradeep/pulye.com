@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import './Navbar.css';
-import Logo from '../pulye_background_removed_logo.png';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import "./Navbar.css";
+import Logo from "../pulye_background_removed_logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,26 +22,33 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         {/* Logo Section */}
         <div className="logo-container">
           <div className="logo-section">
-            <img src={Logo} alt="Pulye Transport Services Logo" className="logo" />
-            <span><b>Pulye</b></span>
+            <img
+              src={Logo}
+              alt="Pulye Transport Services Logo"
+              className="logo"
+            />
+            <span>
+              <b>Pulye</b>
+            </span>
           </div>
         </div>
 
         {/* Desktop Navigation Links */}
         <ul className="desktop-nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><a href="/#services">Services</a></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><a href="/#contact">Contact</a></li>
         </ul>
 
         {/* Mobile Menu Toggle */}
@@ -55,9 +63,10 @@ const Navbar = () => {
               <X size={24} />
             </button>
             <ul className="mobile-nav-links">
-              <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-              <li><a href="#services" onClick={toggleMenu}>Services</a></li>
-              <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+              <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+              <li><a href="/#services" onClick={toggleMenu}>Services</a></li>
+              <li><Link to="/gallery" onClick={toggleMenu}>Gallery</Link></li>
+              <li><a href="/#contact" onClick={toggleMenu}>Contact</a></li>
             </ul>
           </div>
         )}

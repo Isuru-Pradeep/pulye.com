@@ -245,3 +245,8 @@ body {
 .whatsapp-button svg {
   font-size: 2rem;
 }
+
+.page-container {
+  padding-top: 80px; /* To account for the fixed navbar */
+  min-height: calc(100vh - 80px - 200px); /* Full height minus navbar and footer */
+}

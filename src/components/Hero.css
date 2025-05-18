@@ -53,14 +53,14 @@
   gap: 0.375rem;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
   color: #f7f7f7;
   transition-colors: 0.2s;
   cursor: pointer;
 }
 
 .hero-cta-button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .hero-cta-icon {
@@ -128,4 +128,29 @@
 
 .star {
   opacity: 0.7;
+}
+
+
+.hero-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust opacity to blend with the gradient */
+  z-index: 1;
+  pointer-events: none; /* Makes clicks pass through to elements below */
+}
+
+
+.dots-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
 }

@@ -29,7 +29,10 @@
 
 .service-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increased minmax value */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(4px, 1fr)
+  ); /* Increased minmax value */
   gap: 1rem; /* Reduced gap for smaller spacing */
   margin-bottom: 1rem;
   justify-items: center; /* Add this line to center items horizontally within the grid */
@@ -40,6 +43,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 50%;
   gap: 0.1rem;
   font-size: 1.1rem;
   padding: 1.5rem;

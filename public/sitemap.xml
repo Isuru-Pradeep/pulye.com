@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.pulye.com/</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.pulye.com/img/ChatGPT Image May 18, 2025, 10_14_48 AM.png</image:loc>
+      <image:title>Pulye Transport Services</image:title>
+    </image:image>
+  </url>
+
+  <!-- Services Section -->
+  <url>
+    <loc>https://www.pulye.com/#services</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.pulye.com/img/acBus/1.jpg</image:loc>
+      <image:title>Airport Transfers</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pulye.com/img/acBus/2.jpg</image:loc>
+      <image:title>Group Transportation</image:title>
+    </image:image>
+  </url>
+
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://www.pulye.com/gallery</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.pulye.com/img/acBus/3.jpg</image:loc>
+      <image:title>Luxury Transport Option</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pulye.com/img/acBus/4.jpg</image:loc>
+      <image:title>Comfortable Bus Interior</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pulye.com/img/acBus/5.jpg</image:loc>
+      <image:title>Long Distance Travel Vehicle</image:title>
+    </image:image>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://www.pulye.com/#contact</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Booking Section -->
+  <url>
+    <loc>https://www.pulye.com/#booking</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Popular Transport Routes (assuming these are important pages/sections for your business) -->
+  <url>
+    <loc>https://www.pulye.com/routes/airport-transfer</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.pulye.com/routes/colombo-kandy</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.pulye.com/routes/colombo-galle</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Vehicle Types Pages -->
+  <url>
+    <loc>https://www.pulye.com/vehicles/luxury-van</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.pulye.com/img/bus/1.jpg</image:loc>
+      <image:title>Luxury Van Service</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.pulye.com/vehicles/ac-bus</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.pulye.com/img/bus/2.jpg</image:loc>
+      <image:title>AC Bus Service</image:title>
+    </image:image>
+  </url>
+</urlset>
